@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/estilos.css">
+	<title>Registro</title>
+	<link rel="icon" type="image/png" href="Imagenes/Logo2.0.png"/>
+	<script src="js/indexedDB.js">	</script>
+	<meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1.0,minimun-scale=1.0,maximun-scale=1.0">
+</head>
+<body onload="startDB();" bgcolor=#74edaf>
+	<div id="registro">
+		<img src="Imagenes/registro.png" alt="Registro" width="110" height="100"><br>
+		<form name="registro_usuario" method="post">
+
+				<input type="text" name = "nombre" id = "nombre" style="color:#aaa8a7" placeholder="Nombre" onclick='this.value=""' minlength="3 " maxlength="15"required><br>
+
+				<input type="text" name = "apellido" id = "apellido" placeholder="Apellido" onclick='this.value=""' minlength="4 " maxlength="15"required><br>
+				<input type="text" name = "usuario" id = "usuario" placeholder="Nombre de usuario" onclick='this.value=""' minlength="3 " maxlength="15"required><br>
+
+				<input type="password" name = "contrasena" id = "contrasena" placeholder="Contraseña" maxlength="15" minlength="6" style="color:#aaa8a7" required><br>
+				<input type="button" id="Registrar" value="Registrar" onclick="add();"> <br>
+				<a href="ingreso.html"><input type="button" id="cancelar" value="Cancelar" ><STYLE>{text-decoration: none;} </STYLE></a><br>
+		</form>
+	</div>
+</body>
+</html>

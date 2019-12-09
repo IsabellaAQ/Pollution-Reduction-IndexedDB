@@ -1,0 +1,32 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/estilos.css">
+		<script src="js/indexedDB.js">	</script>
+		<title>Login</title>
+		<link rel="icon" type="image/png" href="Imagenes/Logo2.0.png"/>
+		<meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1.0,minimun-scale=1.0,maximun-scale=1.0">
+</head>
+<body onload="startDB();" bgcolor=#74edaf>
+	<div id="login">
+	 	<img src="imagenes/login.png" alt="Login" >
+	 	<form name="login_usuario" method="post">
+		 	<div id="input_login">
+
+		 		
+		 		<input type="text" name = "usuariol" id = "usuariol" placeholder = "Escriba su Usuario" style="color:#aaa8a7"><br>
+		 		<input type="password" name = "log_contra" id = "contral" placeholder = "Escriba su Contraseña" style="color:#aaa8a7"><br>
+				
+
+
+				<input type="button" id="Actualizar" onclick="login();" value="Aceptar"><br>
+				<a href="ingreso.html"><input type="button" value="Cancelar"></a><br>
+				<div id="btn_registro">
+					<a href="registro.html"><input type="button" name="registro" value="Registrarse"></a>
+				</div>
+		 	</div>
+		</form>
+ 	</div>
+</body>
+</html>

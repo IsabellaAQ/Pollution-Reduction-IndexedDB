@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/estilos.css">
+		<meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1.0,minimun-scale=1.0,maximun-scale=1.0">
+		<title>Inicio</title>
+		<link rel="icon" type="image/png" href="Imagenes/Logo2.0.png"/>
+		<script type="text/javascript">
+			var timeout= 0;
+			var cuenta= 5;
+			function Inicio(){
+				Contador();
+			}
+			function Contador(){
+				cuenta = cuenta -1;
+				if(cuenta ==0){
+				Para_Contador();
+				window.open('ingreso.html','_self');
+				}else{
+				setTimeout("Contador()",1000);
+				}
+			}
+			function Para_Contador(){
+				clearTimeout(timeout);
+				timeout=0;
+			}
+		</script>
+</head>
+<body onload="Inicio()" bgcolor=#74edaf>
+	<div id="inicio">
+		<img src="Imagenes/Logo1.0.png" alt="Logo1.0.png">
+		<h1>Pollution Reduction</h1>
+	</div>
+</body>
+</html>
